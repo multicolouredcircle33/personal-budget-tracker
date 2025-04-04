@@ -14,7 +14,7 @@ def console_printer():
 
 def add_income():
   global total_income
-  income = int(input('Enter the amount of income: '))
+  income = int(input('Enter the income amount: '))
   income = float(income)
   total_income += income
   print(f'Income of {income} added successfully.')
