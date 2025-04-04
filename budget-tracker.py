@@ -1,5 +1,5 @@
 income = 0
-expenses = []
+expenses = {}
 expense_amount = 0
 total_expenses = 0
 total_income = 0
@@ -13,24 +13,36 @@ def console_printer():
   print('4. Exit')
 
 def add_income():
-  total_income = 0
+  global total_income
   income = int(input('Enter the amount of income: '))
-  total_income += income
   income = float(income)
+  total_income += income
   print(f'Income of {income} added successfully.')
-  
+    
 def record_expense():
+  global total_income
+  global total_expenses
   expense_category = str(input('Enter the expense category (e.g groceries, rent): '))
-  expense_amount =  input('Enter the expense amount: ')
-  expense_amount = float(expense_amount)
-  print(f'Expense of {expense_amount} added to {expense_category}')
-  
+  expense_amount =  int(input('Enter the expense amount: '))
+  if expense_amount < total_income:
+    total_income -= expense_amount
+    expenses[expense_category] = expense_amount
+    expense_amount = float(expense_amount)
+    total_expenses += expense_amount
+    print(f'Expense of {expense_amount} added to {expense_category}')
+    print('  ')
+    print(f'Your total income is {total_income}.')
+  else:
+    print('  ')
+    print('Warning... You have exceeded your budget limit.')
+
 def view_summary():
   print('--- Budget Summary ---')
   print(f'Total Income: {total_income}')
   print(f'Total Expense: {total_expenses}')
-  if total_income < total_expenses:
-    overspent = total_expenses - total_income
+  for key in expenses:
+    value = expenses[key]
+    print(f'You have spent {value} on {key}.')
     
 def program_logic():
   console_printer()
