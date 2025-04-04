@@ -1,5 +1,3 @@
-# personal-budget-tracker
-
 # Budget Tracker App
 
 ## 📌 Overview
@@ -16,7 +14,6 @@ The **Budget Tracker App** is a simple Python-based application designed to help
 ## 🛠️ Technologies Used
 
 - Python (Core Logic)
-- CSV (for data storage)
 - Command Line Interface (CLI-based interaction)
 
 ## 📂 Project Structure
@@ -24,7 +21,6 @@ The **Budget Tracker App** is a simple Python-based application designed to help
 ```
 Budget-Tracker/
 │-- budget_tracker.py   # Main application script
-│-- transactions.csv    # File to store transaction records
 │-- README.md           # Project documentation
 ```
 
@@ -49,7 +45,6 @@ Budget-Tracker/
 1. The app will prompt you to **add transactions** (income or expense).
 2. You can **assign a category** to each transaction.
 3. View a **summary** of your finances.
-4. Transactions are saved to `transactions.csv` for future reference.
 
 ## 📖 Example Interaction
 
@@ -65,12 +60,6 @@ Enter source (e.g., Salary): Salary
 Transaction saved successfully!
 ```
 
-## ✅ Future Enhancements
-
-- GUI version using Tkinter or PyQt
-- Data visualization for spending trends
-- Integration with databases (SQLite, PostgreSQL)
-
 ## 🤝 Contributing
 
 Feel free to fork this project, improve it, and submit a pull request!
@@ -81,6 +70,6 @@ This project is licensed under the MIT License.
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by @multicolouredcircle33
 
 
