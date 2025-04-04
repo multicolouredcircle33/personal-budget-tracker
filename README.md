@@ -9,7 +9,6 @@ The **Budget Tracker App** is a simple Python-based application designed to help
 - Add income and expense transactions
 - Categorize transactions (e.g., Food, Rent, Utilities, Entertainment)
 - View total income, expenses, and remaining balance
-- Save transaction history to a file for record-keeping
 
 ## 🛠️ Technologies Used
 
@@ -20,7 +19,7 @@ The **Budget Tracker App** is a simple Python-based application designed to help
 
 ```
 Budget-Tracker/
-│-- budget_tracker.py   # Main application script
+│-- budget-tracker.py   # Main application script
 │-- README.md           # Project documentation
 ```
 
@@ -28,8 +27,7 @@ Budget-Tracker/
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/your-username/budget-tracker.git
-   cd budget-tracker
+   git clone https://github.com/multicolouredcircle33/personal-budget-tracker.git
    ```
 2. **Ensure Python is installed** (>=3.6)
    ```sh
@@ -37,7 +35,7 @@ Budget-Tracker/
    ```
 3. **Run the application**
    ```sh
-   python budget_tracker.py
+   python budget-tracker.py
    ```
 
 ## 📝 Usage
@@ -49,27 +47,23 @@ Budget-Tracker/
 ## 📖 Example Interaction
 
 ```
-Welcome to Budget Tracker!
+--- Personal Budget Tracker ---
 1. Add Income
 2. Add Expense
 3. View Summary
 4. Exit
 Enter your choice: 1
-Enter income amount: 1000
-Enter source (e.g., Salary): Salary
-Transaction saved successfully!
+Enter the income amount: 1000
+Income of {income} added successfully.
 ```
+
+## 💡Future Improvements
+1. Save transaction history to a file(csv) for record-keeping.
+2. Data Visualization for spending habits.
+3. MySQL and PostgreSQL Database Integration.
 
 ## 🤝 Contributing
 
 Feel free to fork this project, improve it, and submit a pull request!
 
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
-
 Made with ❤️ by @multicolouredcircle33
-
-
